@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-axios.get('http://localhost:3000/checkout/')
+axios.get('https://app-relise.herokuapp.com/checkout')
   .then(function (response) {
     // handle success
     console.log(response);
