@@ -7,19 +7,8 @@ const searchData = require('../scripts/checkout.validation')
 @Injectable()
 export class CheckoutService {
   constructor(private readonly checkoutRepository : CheckoutRepository){}
-  create(createCheckoutDto: CreateCheckoutDto) {
-    return 'This action adds a new checkout';
-  }
 
-  findAll() {
-    //return this.checkoutRepository.getAll()
-  }
-
-  findOne(id: string) {
-    //return this.checkoutRepository.getOne(0)
-  }
-
-  async update(id: string, updateCheckoutDto: UpdateCheckoutDto) {
+  async update() {
     let reqNum = 0
     while (true){
         let reqCalc = reqNum +1
